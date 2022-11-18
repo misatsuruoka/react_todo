@@ -54,3 +54,8 @@ li {
   align-items: center;
   padding-bottom: 4px;
 }
+
+.todo-text {
+  fontweight: bold;
+  color: #666;
+}
