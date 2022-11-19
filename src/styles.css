@@ -13,6 +13,7 @@ button {
   border-radius: 16px;
   border: none;
   padding: 4px 16px;
+  background-color: white;
 }
 
 button:hover {
@@ -25,7 +26,7 @@ li {
 }
 
 .incomplete-area {
-  background-color: #c6ffe2;
+  background-color: #b0d2ea;
   width: 400px;
   min-height: 200px;
   padding: 8px;
@@ -34,7 +35,7 @@ li {
 }
 
 .complete-area {
-  background-color: #ffffe0;
+  background-color: #ecaaa5;
   width: 400px;
   min-height: 200px;
   padding: 8px;
@@ -46,7 +47,7 @@ li {
   text-align: center;
   margin-top: 0;
   font-weight: bold;
-  color: #666;
+  color: white;
 }
 
 .list-row {
@@ -57,5 +58,5 @@ li {
 
 .todo-text {
   fontweight: bold;
-  color: #666;
+  color: white;
 }
