@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Typography } from "@mui/material";
 import "./styles.css";
 import { InputTodo } from "./components/InputTodo";
 import { IncompleteTodos } from "./components/IncompleteTodos";
@@ -58,6 +59,10 @@ export const App = () => {
   return (
     <>
       <div>
+        <Typography text="ojin" variant="h3" className="heading">
+          TODO List
+        </Typography>
+        ;
         <InputTodo
           todoText={todoText}
           onChange={onChangeTodoText}

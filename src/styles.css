@@ -60,3 +60,7 @@ li {
   fontweight: bold;
   color: white;
 }
+
+.heading {
+  text-align: center;
+}
