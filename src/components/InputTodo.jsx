@@ -1,12 +1,12 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button, Container } from "@mui/material";
 
 const style = {
   backgroundColor: "#f1e5ab",
   width: "400px",
   height: "30px",
   padding: "8px",
-  margin: "8px",
+  margin: "auto",
   borderRadius: "8px",
 };
 

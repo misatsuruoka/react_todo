@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./styles.css";
-import { InputTodo } from './components/InputTodo';
+import { InputTodo } from "./components/InputTodo";
 import { IncompleteTodos } from "./components/IncompleteTodos";
 import { CompleteTodos } from "./components/CompleteTodos";
 
 export const App = () => {
-  const [todoText, setTodoText] = useState('');
+  const [todoText, setTodoText] = useState("");
   const [incompleteTodos, setIncompleteTodos] = useState([]);
   const [completeTodos, setCompleteTodos] = useState([]);
 
@@ -14,25 +14,25 @@ export const App = () => {
 
   const onClickAdd = () => {
     // 入力欄が空のまま追加ボタンを押した場合に追加されないようにする
-    if(todoText === "") return
+    if (todoText === "") return;
     // todoTextを追加した新しい配列を定義
     const newTodos = [...incompleteTodos, todoText];
     // 未完了のTODOに値をセット
     setIncompleteTodos(newTodos);
-    setTodoText("")
-  }
+    setTodoText("");
+  };
 
   const onClickDelete = (index) => {
-    const newTodos = [...incompleteTodos]
+    const newTodos = [...incompleteTodos];
     newTodos.splice(index, 1);
     setIncompleteTodos(newTodos);
 
-    const newCompleteTodos = [...completeTodos, incompleteTodos[index]]
-  }
+    const newCompleteTodos = [...completeTodos, incompleteTodos[index]];
+  };
 
   const onClickComplete = (index) => {
     // incompleteTodosの配列をコピーして新しくオブジェクト(配列)を作成
-    const newIncompleteTodos = [...incompleteTodos]
+    const newIncompleteTodos = [...incompleteTodos];
     // newIncompleteTodosから完了ボタンを押したTODOを削除
     newIncompleteTodos.splice(index, 1);
 
@@ -42,7 +42,7 @@ export const App = () => {
     // 　完了TODOと未完了TODOのステートを変更
     setIncompleteTodos(newIncompleteTodos);
     setCompleteTodos(newCompleteTodos);
-  }
+  };
 
   const onClickBack = (index) => {
     const newCompleteTodos = [...completeTodos];
@@ -53,15 +53,27 @@ export const App = () => {
     setCompleteTodos(newCompleteTodos);
     setIncompleteTodos(newIncompleteTodos);
     console.log(newCompleteTodos, newIncompleteTodos);
-
-  }
+  };
 
   return (
     <>
-      <InputTodo todoText={todoText} onChange={onChangeTodoText} onClick={onClickAdd} disabled={incompleteTodos >= 5} />
-      {incompleteTodos.length >= 5 && (<p style={{ color: 'red' }}>登録できるtodoは5個までです</p>)}
-      <IncompleteTodos todos={incompleteTodos} onClickComplete={onClickComplete} onClickDelete={onClickComplete} />
-      <CompleteTodos todos={completeTodos} onClickBack={onClickBack}/>
+      <div>
+        <InputTodo
+          todoText={todoText}
+          onChange={onChangeTodoText}
+          onClick={onClickAdd}
+          disabled={incompleteTodos >= 5}
+        />
+        {incompleteTodos.length >= 5 && (
+          <p style={{ color: "red" }}>登録できるtodoは5個までです</p>
+        )}
+        <IncompleteTodos
+          todos={incompleteTodos}
+          onClickComplete={onClickComplete}
+          onClickDelete={onClickComplete}
+        />
+        <CompleteTodos todos={completeTodos} onClickBack={onClickBack} />
+      </div>
     </>
-  )
-}
+  );
+};
