@@ -27,7 +27,7 @@ li {
 
 .incomplete-area {
   background-color: #b0d2ea;
-  width: 400px;
+  width: 500px;
   min-height: 200px;
   padding: 8px;
   margin: 8px auto;
@@ -36,7 +36,7 @@ li {
 
 .complete-area {
   background-color: #ecaaa5;
-  width: 400px;
+  width: 500px;
   min-height: 200px;
   padding: 8px;
   margin: auto;

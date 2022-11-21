@@ -3,7 +3,7 @@ import { Button, Container } from "@mui/material";
 
 const style = {
   backgroundColor: "#f1e5ab",
-  width: "400px",
+  width: "500px",
   height: "30px",
   padding: "8px",
   margin: "auto",
