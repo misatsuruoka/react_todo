@@ -5,8 +5,11 @@ body {
 input {
   border-radius: 16px;
   border: none;
-  padding: 6px 16px;
+  padding: 8px 16px;
   outline: none;
+  height: 20px;
+  width: 300px;
+  top: 50%;
 }
 
 button {
@@ -28,7 +31,7 @@ li {
 .incomplete-area {
   background-color: #b0d2ea;
   width: 500px;
-  min-height: 200px;
+  min-height: 230px;
   padding: 8px;
   margin: 8px auto;
   border-radius: 8px;
@@ -37,7 +40,7 @@ li {
 .complete-area {
   background-color: #ecaaa5;
   width: 500px;
-  min-height: 200px;
+  min-height: 230px;
   padding: 8px;
   margin: auto;
   border-radius: 8px;
@@ -68,4 +71,8 @@ li {
 
 .container {
   padding: 50px;
+}
+
+.input-area {
+  padding: 7px 0;
 }
