@@ -64,3 +64,7 @@ li {
 .heading {
   text-align: center;
 }
+
+.container {
+  padding: 50px;
+}

@@ -58,8 +58,8 @@ export const App = () => {
 
   return (
     <>
-      <div>
-        <Typography text="ojin" variant="h3" className="heading">
+      <div className="container">
+        <Typography text="ojin" variant="h4" className="heading">
           TODO List
         </Typography>
         ;
