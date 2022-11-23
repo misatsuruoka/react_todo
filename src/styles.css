@@ -26,6 +26,7 @@ button:hover {
 
 li {
   margin-right: 8px;
+  color: #555555;
 }
 
 .incomplete-area {
@@ -61,7 +62,7 @@ li {
 
 .todo-text {
   fontweight: bold;
-  color: white;
+  color: #555555;
 }
 
 .heading {

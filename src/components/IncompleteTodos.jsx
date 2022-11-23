@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button, Checkbox } from "@mui/material";
 
 export const IncompleteTodos = (props) => {
   const { todos, onClickComplete, onClickDelete } = props;
@@ -11,7 +11,8 @@ export const IncompleteTodos = (props) => {
         {todos.map((todo, index) => {
           return (
             <div key={todo} className="list-row">
-              <li className="todo-text">{todo}</li>
+              <Checkbox defaultChecked />
+              <p className="todo-text">{todo}</p>
               <button onClick={() => onClickComplete(index)}>完了</button>
               <button onClick={() => onClickDelete(index)}>削除</button>
             </div>
