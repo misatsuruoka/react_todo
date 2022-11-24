@@ -11,7 +11,7 @@ export const IncompleteTodos = (props) => {
         {todos.map((todo, index) => {
           return (
             <div key={todo} className="list-row">
-              <Checkbox defaultChecked />
+              <Checkbox defaultChecked color="default" />
               <p className="todo-text">{todo}</p>
               <button onClick={() => onClickComplete(index)}>完了</button>
               <button onClick={() => onClickDelete(index)}>削除</button>
