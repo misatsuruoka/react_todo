@@ -1,4 +1,5 @@
 import React from "react";
+import { Checkbox } from "@mui/material";
 
 export const CompleteTodos = (props) => {
   const { todos, onClickBack } = props;
@@ -10,7 +11,12 @@ export const CompleteTodos = (props) => {
         {todos.map((todo, index) => {
           return (
             <div key={todo} className="list-row">
-              <li className="todo-text">{todo}</li>
+              <Checkbox
+                onClick={() => onClickBack(index)}
+                defaultChecked
+                color="default"
+              />
+              <p className="todo-text">{todo}</p>
               <button onClick={() => onClickBack(index)}>戻す</button>
             </div>
           );
