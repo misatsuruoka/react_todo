@@ -16,7 +16,6 @@ export const IncompleteTodos = (props) => {
                 color="default"
               />
               <p className="todo-text">{todo}</p>
-              <button>完了</button>
               <button onClick={() => onClickDelete(index)}>削除</button>
             </div>
           );
