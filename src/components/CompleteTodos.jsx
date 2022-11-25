@@ -17,7 +17,6 @@ export const CompleteTodos = (props) => {
                 color="default"
               />
               <p className="todo-text">{todo}</p>
-              <button onClick={() => onClickBack(index)}>戻す</button>
             </div>
           );
         })}
