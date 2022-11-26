@@ -14,6 +14,7 @@ export const IncompleteTodos = (props) => {
               <Checkbox
                 onClick={() => onClickComplete(index)}
                 color="default"
+                style={{ color: "white" }}
               />
               <p className="todo-text">{todo}</p>
               <button onClick={() => onClickDelete(index)}>削除</button>
