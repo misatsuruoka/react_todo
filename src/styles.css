@@ -24,6 +24,7 @@ button {
 button:hover {
   background-color: #ff7fff;
   cursor: pointer;
+  transition: all 1s;
 }
 
 li {
