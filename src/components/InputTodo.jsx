@@ -9,6 +9,7 @@ const style = {
   margin: "auto",
   borderRadius: "8px",
   position: "relative",
+  color: "#808080",
 };
 
 export const InputTodo = (props) => {
