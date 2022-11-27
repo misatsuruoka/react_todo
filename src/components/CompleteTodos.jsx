@@ -15,6 +15,7 @@ export const CompleteTodos = (props) => {
                 onClick={() => onClickBack(index)}
                 defaultChecked
                 color="default"
+                style={{ color: "white" }}
               />
               <p className="todo-text">{todo}</p>
             </div>
